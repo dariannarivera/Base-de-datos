@@ -1,0 +1,12 @@
+CREATE TABLE `profesores` (
+  `codigo` varchar(50) NOT NULL,
+  `apellido1` varchar(50) DEFAULT NULL,
+  `apellido2` varchar(50) DEFAULT NULL,
+  `nombre_pila` varchar(50) DEFAULT NULL,
+  `activo` varchar(50) DEFAULT NULL,
+  `categoria` varchar(50) DEFAULT NULL,
+  `dedicación` varchar(50) DEFAULT NULL,
+  `area` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`codigo`),
+  Foreign key  (area) References areas (area)
+);
